@@ -16,7 +16,7 @@ tags: [Architecture]
 
 ### 利用数据库自增id生成
 #### 实现方式
-![image.png](https://upload-images.jianshu.io/upload_images/3911394-229f3aa469f37e9d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](../assets/images/post/distributed_id_db.png)
 
 * 利用 MySQL 数据库自增 id 的特性获取到一个 sequence
 * 上层服务（多台机器）获取到 sequence，然后在此基础上逐步累加 step。相当于每次获取到的 sequence 共有 step 个id可用
@@ -50,9 +50,9 @@ tags: [Architecture]
 利用 redis 单线程的特性，使用 incr 或 increby 生成 id
 * **MongoDB 的 objectId**  
 3.2 及之前版本  
-![image.png](https://upload-images.jianshu.io/upload_images/3911394-c184da983534013c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](../assets/images/post/distributed_id_mongodb_3.2.png)
 3.2 之后版本  
-![image.png](https://upload-images.jianshu.io/upload_images/3911394-4a374b7f522ab49b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](../assets/images/post/distributed_id_mongodb.png)
 
 * **zookeeper 数据节点的版本**
 
@@ -67,7 +67,7 @@ tags: [Architecture]
 
 ### 雪花算法
 #### 实现方式
-![image.png](https://upload-images.jianshu.io/upload_images/3911394-9f15849cff700cf5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](../assets/images/post/distributed_id_snow.png)
 
 * 41bits 作为毫秒数。大概可以用 69.7 年
 * 10bits 作为机器编号（5bits 是数据中心，5bits 的机器 ID），支持 1024 个实例
