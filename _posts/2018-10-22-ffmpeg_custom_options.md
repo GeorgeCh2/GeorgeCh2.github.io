@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FFmpeg 解析命令行参数
+title: FFmpeg 自定义命令行参数
 categories: Media
 tags: [Media]
 ---

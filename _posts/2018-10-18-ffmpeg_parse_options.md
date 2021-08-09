@@ -27,7 +27,7 @@ ffmpeg -i input.avi -b:v 640k output.avi
 
 **首先简单看下流程图**：
 
-![FFmpeg 解析命令行参数.png](../assets/images/post/ffmpeg_parse_options.png)
+![FFmpeg 解析命令行参数.png](https://raw.githubusercontent.com/GeorgeCh2/GeorgeCh2.github.io/gh-pages/assets/images/post/ffmpeg_parse_options.png)
 
 
 总结起来，解析命令行的**大致流程**就是：
