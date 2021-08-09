@@ -5,7 +5,7 @@ categories: Media
 tags: [Media]
 ---
 
-随着 Android 10 对HEIF图片格式的支持，后续将有越来越多的移动设备支持HEIF图片的拍摄。但是部分Windows设备，老的移动设备不支持HEIF图片的查看，下面介绍如何在Mac上自己编译一个HEIF转jpeg的可执行程序。
+> 随着 Android 10 对HEIF图片格式的支持，后续将有越来越多的移动设备支持HEIF图片的拍摄。但是部分Windows设备，老的移动设备不支持HEIF图片的查看，下面介绍如何在Mac上自己编译一个HEIF转jpeg的可执行程序。
 
 ### 环境搭建
 
@@ -19,9 +19,9 @@ brew install automake,make,libtool
 
 ### 下载开源库
 
-1. libjpeg-turbo: https://github.com/libjpeg-turbo/libjpeg-turbo
-2. libde265:https://github.com/strukturag/libde265
-3. libheif: https://github.com/strukturag/libheif
+1. [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo)
+2. [libde265](https://github.com/strukturag/libde265)
+3. [libheif](https://github.com/strukturag/libheif)
 
 
 
@@ -102,4 +102,4 @@ heif-enc：支持转换成 heif文件（因为没有编译h265编码库，目前
 
 
 
-> 上面编译的脚步已经整理到了github：https://github.com/GeorgeCh2/libheif-static-complie
+上面编译的脚步已经整理到了 [github](https://github.com/GeorgeCh2/libheif-static-complie)
