@@ -173,7 +173,7 @@ gitment:
   repo: "GeorgeCh2.github.io"
   client_id: "93b70ccc57a8fd3ac6a1"
   client_secret: "244dab3f57f6f8f61a048afa4986b0ae8822edce"
-  redirect_uri: "https://georgech2.github.io/"   # If you use a custom domain name
+  # redirect_uri: "https://georgech2.github.io/"   # If you use a custom domain name
 
 # Build settings
 # highlighter: none
